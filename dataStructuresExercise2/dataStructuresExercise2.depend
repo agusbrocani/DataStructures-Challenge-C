@@ -1,0 +1,14 @@
+# depslib dependency file v1.0
+1698960800 source:c:\users\pc\desktop\datastructures-challenge\datastructuresexercise2\datastructuresexercise2.c
+	"dataStructuresExercise2.h"
+
+1698961382 c:\users\pc\desktop\datastructures-challenge\datastructuresexercise2\datastructuresexercise2.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	<stdbool.h>
+
+1698960767 source:c:\users\pc\desktop\datastructures-challenge\datastructuresexercise2\main.c
+	"dataStructuresExercise2.h"
+
