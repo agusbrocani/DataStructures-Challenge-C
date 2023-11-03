@@ -2,7 +2,7 @@
 
 int validateInt( int number, int lowerLimit, int upperLimit )
 {
-    return !( number >= lowerLimit && number <= upperLimit ) ? false : true;
+    return ( number >= lowerLimit && number <= upperLimit );
 }
 
 void showInterval( const void* data )
@@ -39,10 +39,9 @@ int thereIsOverlap( tInterval* firstInterval, tInterval* secondInterval )
     return true;
 }
 
-//As both while loops depend on the same parameter, the complexity is linear, O(intervalsLength).
-int validateArrayContentAndLoadResultsArray( tInterval* intervals, tInterval* result, int dataSize, int intervalsLength, int* resultLength, int minValue, int maxValue )
+tInterval* validateArrayContentAndLoadResultsArray( tInterval* intervals, tInterval* result, int dataSize, int intervalsLength, int* resultLength, int minValue, int maxValue )
 {
-    tQueue resultsQueue;
+    tQueue resultsQueue;    ///I used a queue to demonstrate my knowledge of data structures, but I could have directly loaded the result into the result array.
     tInterval firstInterval;
     int toBeTraversed = intervalsLength;
     int i = 0;
@@ -51,11 +50,11 @@ int validateArrayContentAndLoadResultsArray( tInterval* intervals, tInterval* re
 
     while(          toBeTraversed           )
     {
-        firstInterval = intervals[i];
+        firstInterval = intervals[i];   //firstInterval is a variable used to store the interval that will be saved in the results queue.
 
         if(         !validateInterval( &firstInterval, minValue, maxValue ))    //validateInterval ensures that intervals satisfy all preconditions
         {
-            return ARRAY_CONTENT_ERROR;
+            return NULL;
         }
 
         //If there is no overlap, thereIsOverlap returns false. However, if there is an overlap, thereIsOverlap combines both intervals and loads the result into firstInterval.
@@ -63,12 +62,12 @@ int validateArrayContentAndLoadResultsArray( tInterval* intervals, tInterval* re
         {
             if(         !validateInterval( &intervals[i + 1], minValue, maxValue ))
             {
-                return ARRAY_CONTENT_ERROR;
+                return NULL;
             }
             i++;
             toBeTraversed--;
         }
-        qPush( &resultsQueue, &firstInterval, dataSize );   //firstInterval contains a valid interval to be loaded into the result
+        qPush( &resultsQueue, &firstInterval, dataSize );   //firstInterval contains a valid interval to be loaded into the result. []
 
         i++;
         toBeTraversed--;
@@ -82,5 +81,5 @@ int validateArrayContentAndLoadResultsArray( tInterval* intervals, tInterval* re
     }
     clearQueue( &resultsQueue );            //to ensure no memory leaks
 
-    return OK;
+    return result;
 }

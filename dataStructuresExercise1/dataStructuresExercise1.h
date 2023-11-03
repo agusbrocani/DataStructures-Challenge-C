@@ -2,7 +2,6 @@
 #define DATASTRUCTURES_H_INCLUDED
 #include <stdio.h>
 #include <stdlib.h>
-#include <stdbool.h>
 #include <math.h>
 
 #define LOWER_LENGTH_LIMIT 1

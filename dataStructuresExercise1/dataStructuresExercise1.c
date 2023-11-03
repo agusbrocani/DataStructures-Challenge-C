@@ -2,7 +2,7 @@
 
 int validateInt( int number, int lowerLimit, int upperLimit )
 {
-    return !( number >= lowerLimit && number <= upperLimit ) ? false : true;
+    return ( number >= lowerLimit && number <= upperLimit );
 }
 
 int* validateArrayContentAndCalculateSolution( const int* nums, int* result, int numsLength, int minValue, int maxValue )

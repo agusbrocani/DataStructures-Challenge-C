@@ -20,12 +20,14 @@
 	<stdbool.h>
 	<math.h>
 
-1698961416 source:c:\users\pc\desktop\datastructures-challenge\datastructuresexercise1\datastructuresexercise1.c
+1699036124 source:c:\users\pc\desktop\datastructures-challenge\datastructuresexercise1\datastructuresexercise1.c
 	"dataStructuresExercise1.h"
 
-1698961618 c:\users\pc\desktop\datastructures-challenge\datastructuresexercise1\datastructuresexercise1.h
+1699036304 c:\users\pc\desktop\datastructures-challenge\datastructuresexercise1\datastructuresexercise1.h
 	<stdio.h>
 	<stdlib.h>
-	<stdbool.h>
 	<math.h>
+
+1699036502 source:c:\users\pc\desktop\datastructures-challenge\datastructuresexercise1\main.c
+	"dataStructuresExercise1.h"
 
