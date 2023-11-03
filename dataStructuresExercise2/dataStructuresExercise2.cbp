@@ -35,6 +35,10 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="dataStructuresExercise2.h" />
+		<Unit filename="dataStructures/queue.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="dataStructures/queue.h" />
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>

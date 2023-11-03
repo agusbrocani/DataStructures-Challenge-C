@@ -1,14 +1,32 @@
 # depslib dependency file v1.0
-1698960800 source:c:\users\pc\desktop\datastructures-challenge\datastructuresexercise2\datastructuresexercise2.c
+1698989711 source:c:\users\pc\desktop\datastructures-challenge\datastructuresexercise2\datastructuresexercise2.c
 	"dataStructuresExercise2.h"
 
-1698961382 c:\users\pc\desktop\datastructures-challenge\datastructuresexercise2\datastructuresexercise2.h
+1698989727 c:\users\pc\desktop\datastructures-challenge\datastructuresexercise2\datastructuresexercise2.h
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
 	<ctype.h>
 	<stdbool.h>
+	"dataStructures/queue.h"
 
-1698960767 source:c:\users\pc\desktop\datastructures-challenge\datastructuresexercise2\main.c
+1698990049 source:c:\users\pc\desktop\datastructures-challenge\datastructuresexercise2\main.c
 	"dataStructuresExercise2.h"
+
+1698989891 source:c:\users\pc\desktop\datastructures-challenge\datastructuresexercise2\datastructures\queue.c
+	"queue.h"
+
+1698989857 c:\users\pc\desktop\datastructures-challenge\datastructuresexercise2\datastructures\queue.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1698981350 source:c:\users\pc\desktop\datastructures-challenge\datastructuresexercise2\datastructures\stack.c
+	"stack.h"
+
+1698981944 c:\users\pc\desktop\datastructures-challenge\datastructuresexercise2\datastructures\stack.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
 
