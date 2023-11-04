@@ -4,8 +4,8 @@
 #include <stdlib.h>
 #include <math.h>
 
-#define LOWER_LENGTH_LIMIT 1
-#define UPPER_LENGTH_LIMIT 104
+#define LOWER_LENGTH_BOUND 1
+#define UPPER_LENGTH_BOUND 104
 
 #define MIN_VALUE -104
 #define MAX_VALUE 104
@@ -15,7 +15,7 @@
 #define MALLOC_ERROR 1
 #define ARRAY_CONTENT_ERROR 2
 
-int validateInt( int number, int lowerLimit, int upperLimit );
+int validateInt( int number, int lowerBound, int upperBound );
 
 int* validateArrayContentAndCalculateSolution( const int* nums, int* result, int numsLength, int minValue, int maxValue );
 

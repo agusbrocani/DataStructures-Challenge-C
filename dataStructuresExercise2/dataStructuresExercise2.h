@@ -5,8 +5,8 @@
 #include <stdbool.h>
 #include "dataStructures/queue.h"
 
-#define LOWER_LENGTH_LIMIT 1
-#define UPPER_LENGTH_LIMIT 104
+#define LOWER_LENGTH_BOUND 1
+#define UPPER_LENGTH_BOUND 104
 
 #define MIN_VALUE 0
 #define MAX_VALUE 104
@@ -24,7 +24,7 @@ typedef struct
 void showInterval( const void* data );
 void showData( const void* data, int dataSize, int dataLength, void (*show)( const void* data ) );
 
-int validateInt( int number, int lowerLimit, int upperLimit );
+int validateInt( int number, int lowerBound, int upperBound );
 int validateInterval( tInterval* interval, int minValue, int maxValue );
 
 int thereIsOverlap( tInterval* firstInterval, tInterval* secondInterval );

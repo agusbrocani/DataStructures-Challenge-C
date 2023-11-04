@@ -1,8 +1,8 @@
 #include "dataStructuresExercise1.h"
 
-int validateInt( int number, int lowerLimit, int upperLimit )
+int validateInt( int number, int lowerBound, int upperBound )
 {
-    return ( number >= lowerLimit && number <= upperLimit );
+    return ( number >= lowerBound && number <= upperBound );
 }
 
 int* validateArrayContentAndCalculateSolution( const int* nums, int* result, int numsLength, int minValue, int maxValue )

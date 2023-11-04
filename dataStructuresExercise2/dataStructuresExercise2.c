@@ -1,8 +1,8 @@
 #include "dataStructuresExercise2.h"
 
-int validateInt( int number, int lowerLimit, int upperLimit )
+int validateInt( int number, int lowerBound, int upperBound )
 {
-    return ( number >= lowerLimit && number <= upperLimit );
+    return ( number >= lowerBound && number <= upperBound );
 }
 
 void showInterval( const void* data )

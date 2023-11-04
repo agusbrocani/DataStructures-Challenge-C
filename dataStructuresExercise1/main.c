@@ -13,7 +13,7 @@ int main()
     printf("Input: nums\n");
     showData( nums, dataSize, numsLength, showInt );
 
-    if(         !validateInt( numsLength, LOWER_LENGTH_LIMIT, UPPER_LENGTH_LIMIT )           )
+    if(         !validateInt( numsLength, LOWER_LENGTH_BOUND, UPPER_LENGTH_BOUND )           )
     {
         printf("ERROR: Array length is not valid\n");
         return LENGTH_ERROR;
@@ -42,7 +42,7 @@ int main()
 }
 
 //Cases to test the code:
-    ///empty array case -> return 0
+    ///empty array case -> return LENGTH_ERROR
 //    int nums[] = {};
     ///one element case -> return 0
 //    int nums[] = { -2 };

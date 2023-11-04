@@ -1,14 +1,14 @@
 # depslib dependency file v1.0
-1699035837 source:c:\users\pc\desktop\datastructures-challenge\datastructuresexercise2\datastructuresexercise2.c
+1699058284 source:c:\users\pc\desktop\datastructures-challenge\datastructuresexercise2\datastructuresexercise2.c
 	"dataStructuresExercise2.h"
 
-1699036006 c:\users\pc\desktop\datastructures-challenge\datastructuresexercise2\datastructuresexercise2.h
+1699058242 c:\users\pc\desktop\datastructures-challenge\datastructuresexercise2\datastructuresexercise2.h
 	<stdio.h>
 	<stdlib.h>
 	<stdbool.h>
 	"dataStructures/queue.h"
 
-1699035992 source:c:\users\pc\desktop\datastructures-challenge\datastructuresexercise2\main.c
+1699058213 source:c:\users\pc\desktop\datastructures-challenge\datastructuresexercise2\main.c
 	"dataStructuresExercise2.h"
 
 1698989891 source:c:\users\pc\desktop\datastructures-challenge\datastructuresexercise2\datastructures\queue.c

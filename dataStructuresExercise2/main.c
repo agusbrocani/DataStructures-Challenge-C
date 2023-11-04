@@ -1,5 +1,6 @@
 #include "dataStructuresExercise2.h"
 
+///Important: I assume that the collection is sorting in non-decreasing order.
 int main()
 {
     tInterval intervals[] =
@@ -23,7 +24,7 @@ int main()
     printf("Input: intervals\n");
     showData( intervals, dataSize, intervalsLength, showInterval );
 
-    if(         !validateInt( intervalsLength, LOWER_LENGTH_LIMIT, UPPER_LENGTH_LIMIT )            )
+    if(         !validateInt( intervalsLength, LOWER_LENGTH_BOUND, UPPER_LENGTH_BOUND )            )
     {
         printf("ERROR: Array length is not valid\n");
         return LENGTH_ERROR;
