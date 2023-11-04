@@ -1,4 +1,5 @@
-#DataStructures Challenge in C
+
+##DataStructures Challenge in C
 
 This project demonstrates logic in the management of data structures with the C language.
 
