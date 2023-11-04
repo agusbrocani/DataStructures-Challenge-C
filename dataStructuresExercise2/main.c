@@ -48,7 +48,7 @@ int main()
 //        {}                    //->valid case, equivalent to doing tInterval intervals[] ={{ 0,0 }}; intervalsLength = 1; 0 >= 0 <= 104 TRUE
 //    };
 
-    ///out of range -> return ARRAY_CONTENT_ERROR
+    ///2 <= 1 FALSE-> return ARRAY_CONTENT_ERROR
 //    tInterval intervals[] =
 //    {
 //        { 2, 1}

@@ -52,7 +52,7 @@ tInterval* validateArrayContentAndLoadResultsArray( tInterval* intervals, tInter
     {
         firstInterval = intervals[i];   //firstInterval is a variable used to store the interval that will be saved in the results queue.
 
-        if(         !validateInterval( &firstInterval, minValue, maxValue ))    //validateInterval ensures that intervals satisfy all preconditions
+        if(         !validateInterval( &firstInterval, minValue, maxValue )         )    //validateInterval ensures that intervals satisfy all preconditions.
         {
             return NULL;
         }
@@ -67,19 +67,19 @@ tInterval* validateArrayContentAndLoadResultsArray( tInterval* intervals, tInter
             i++;
             toBeTraversed--;
         }
-        qPush( &resultsQueue, &firstInterval, dataSize );   //firstInterval contains a valid interval to be loaded into the result. []
+        qPush( &resultsQueue, &firstInterval, dataSize );   //firstInterval contains a valid interval to be loaded into the result.
 
         i++;
         toBeTraversed--;
     }
 
-    while(          !qEmpty( &resultsQueue )            )       //clear queue and load result array
+    while(          !qEmpty( &resultsQueue )            )       //clear queue and load result array.
     {
         qPop( &resultsQueue, &firstInterval, dataSize );
-        result[(*resultLength)] = firstInterval;                //The length variable is used as an index and then the length is incremented
+        result[(*resultLength)] = firstInterval;                //The length variable is used as an index and then the length is incremented.
         (*resultLength) ++;
     }
-    clearQueue( &resultsQueue );            //to ensure no memory leaks
+    clearQueue( &resultsQueue );            //to ensure no memory leaks.
 
     return result;
 }
