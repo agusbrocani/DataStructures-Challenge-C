@@ -34,7 +34,8 @@ int thereIsOverlap( tInterval* firstInterval, tInterval* secondInterval )
         return false;
     }
 
-    firstInterval->endi = secondInterval->endi; //first Interval->starti is already the smaller of the two start values.
+    firstInterval->endi = MAX( firstInterval->endi, secondInterval->endi );
+    //first Interval->starti is already the smaller of the two start values.
 
     return true;
 }
